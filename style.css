@@ -327,3 +327,62 @@ background: radial-gradient(
     box-shadow: 0 0 25px rgba(62,166,255,0.3);
     border: 1px solid rgba(62,166,255,0.3);
 }
+
+
+.education{
+    padding: 6rem 9%;
+    background: #0f0f0f;
+}
+
+.education .heading{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.education-container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141414;
+    padding: 1.8rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+}
+
+.education-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(62,166,255,0.2);
+    border: 1px solid rgba(62,166,255,0.3);
+}
+
+.edu-left h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.edu-left span{
+    font-size: 0.9rem;
+    color: #bfbfbf;
+}
+
+.edu-right p{
+    font-size: 0.9rem;
+    color: #3ea6ff;
+}
+
+.edu-left p{
+    font-size: 0.9rem;
+    color: #bfbfbf;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
