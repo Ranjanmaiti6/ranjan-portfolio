@@ -7,8 +7,9 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #0d0d0d;
+    background-color: hsl(0, 0%, 5%);
     color: white;
+    padding-top: 80px;
 }
 header{
     position: fixed;
