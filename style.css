@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-background: rgba(24, 24, 24, 0.705);
+    background: rgba(24, 24, 24, 0.705);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
@@ -54,12 +54,13 @@ background: rgba(24, 24, 24, 0.705);
     text-shadow: 0 0 25px #1e90ff;
 }
 #MenuIcon{
-    font-size: 2rem;
-    color: rgb(30, 124, 207);
+    font-size: 2.5rem;
+    color: white;
+    display: none;  
+    cursor: pointer;
 }
 section{
-    min-height: 100vh;
-    padding: 10rem 9% 10rem;
+    padding: 8rem 9%;
 }
 .home{
     display: flex;
@@ -501,10 +502,10 @@ background: radial-gradient(
 }
 @media(min-width: 991px) {
     header{
-        padding: 2rem 3%;
+        padding: 1rem 5%;
     }
     section{
-        padding: 10rem 3% 2rem;
+        padding: 1rem 3% 2rem;
     }
     .projects{
         padding-bottom: 7rem;
@@ -514,7 +515,11 @@ background: radial-gradient(
     }
 }
 @media(max-width: 895px) {
-    #menu-icon{
+    section{
+        min-height: auto;
+        padding: 5rem 5%;
+    }
+    #MenuIcon{
         display: block;
     }
     .navbar{
@@ -522,34 +527,45 @@ background: radial-gradient(
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
-        background: #1e90ff;
-        border-top: 0.1rem solid rgba(0 0 0 0.105);
+        padding: 1rem 5%;
+        background: #111;
+        flex-direction: column;
         display: none;
     }
     .navbar .active{
-        display: block;
+        display: flex;
     }
     .navbar a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        .home{
-            flex-direction: column;
-            margin: 5rem 4rem;
-        }
+    }
+    .home{
+        flex-direction: column;
+        gap: 3rem;
+        margin: 0;
+        text-align: center;
+    }
         .home-container h3{
             font-size: 2.6rem;
         }
         .home-container h1{
-            font-size: 5rem;
+            font-size: 3.5rem;
         }
-        .home-img img{
-            width: 70vw;
-            margin-top: 4rem;
-        }
+    .home-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-img img{
+        width: 65%;
+        max-width: 280px;
+        margin-top: 2rem;
+    }
         .about{
             flex-direction: column-reverse;
+            gap: 3rem;
+            padding: 6rem 5%;
         }
         .about-content{
             margin: 1rem 4rem;
@@ -562,8 +578,20 @@ background: radial-gradient(
         .projects{
             margin-bottom: 3rem;
         }
-        .projects-container{
-            grid-template-columns: repeat(2,1fr);
-        }
+    .projects-container{
+        grid-template-columns: repeat(2,1fr);
     }
+    .skills-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .education-card{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .contact .input-box{
+        flex-direction: column;
+    }
+
+
 }
