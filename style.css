@@ -9,7 +9,6 @@
 body{
     background-color: hsl(0, 0%, 5%);
     color: white;
-    padding-top: 80px;
 }
 header{
     position: fixed;
@@ -68,6 +67,8 @@ section{
     align-items: center;
     justify-content: center;
     gap: 8rem;
+    min-height: calc(100vh - 80px);
+    margin: 75px;
 }
 .home-container{
     max-width: 600px;
@@ -546,6 +547,7 @@ background: radial-gradient(
         gap: 3rem;
         margin: 0;
         text-align: center;
+        min-height: auto;
     }
         .home-container h3{
             font-size: 2.6rem;
